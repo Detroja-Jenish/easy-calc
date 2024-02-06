@@ -1,0 +1,98 @@
+<div class="row mx-5" style="min-height: 100vh; font-size: 16px;">
+    <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <i class="fa fa-calculator mx-2" style="font-size: 2em;"></i> <span style="font-size: 2em; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
+            <hr>
+            <p class="mb-5" style="font-size: 1.5em;">In linear algebra, the determinant is a useful value that can be computed from the elements of a square matrix.</p>
+
+            <p style="font-size: 1.5em;">
+                Matrix Size[ N x N ]
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <select class="form-control">
+                        <option selected disabled>Seleect Matrix Size</option>
+                        <option>2x2</option>
+                        <option>3x3</option>
+                        <option>4x4</option>
+                        <option>5x5</option>
+                        <option>6x6</option>
+                        <option>7x7</option>
+                        <option>8x8</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <button style="font-size: 1.2em;" class="btn bg-primary px-4 py-2">Genrate Matrix</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <i class="fa fa-calculator mx-2" style="font-size: 2rem;"></i> <span style="font-size: 2rem; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
+            <hr>
+            <p style="font-size: 1.5em;">
+                Matrix Size[ N x N ]
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <select class="form-control">
+                        <option selected disabled>Seleect Matrix Size</option>
+                        <option>2x2</option>
+                        <option>3x3</option>
+                        <option>4x4</option>
+                        <option>5x5</option>
+                        <option>6x6</option>
+                        <option>7x7</option>
+                        <option>8x8</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <button style="font-size: 1.2em;" class="btn bg-primary px-4 py-2">Genrate Matrix</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <i class="fa fa-calculator mx-2" style="font-size: 2rem;"></i> <span style="font-size: 2rem; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
+            <hr>
+
+            <div class="row my-3">
+                <div class="col-4" style="font-size: 1.5em;">No Of. Rows</div>
+                <div class="col-4" style="font-size: 1.5em;">No. Of. Cols</div>
+            </div>
+            <div class="row my-3">
+                <div class="col-4">
+                    <input placeholder="No of rows" class="form-control p-2" style="font-size: 1.5em;" type="text" />
+                </div>
+                <div class="col-4">
+                    <input placeholder="No of cols" class="form-control p-2" style="font-size: 1.5em;" type="text" />
+                </div>
+                <div class="col-4">
+                    <button style="font-size: 1.2em;" class="btn bg-primary px-4 py-2">Genrate Matrix</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <i class="fa fa-calculator mx-2" style="font-size: 2rem;"></i> <span style="font-size: 2rem; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
+            <hr>
+
+
+            <div class="row my-3">
+                <div class="col-4" style="font-size: 1.5em;">No Of. Rows</div>
+                <div class="col-4" style="font-size: 1.5em;">No. Of. Cols</div>
+            </div>
+            <div class="row my-3">
+                <div class="col-4">
+                    <input placeholder="No of rows" class="form-control p-2" style="font-size: 1.5em;" type="text"/>
+                </div>
+                <div class="col-4">
+                    <input placeholder="No of cols" class="form-control p-2" style="font-size: 1.5em;" type="text" />
+                </div>
+                <div class="col-4">
+                    <button style="font-size: 1.2em;" class="btn bg-primary px-4 py-2">Genrate Matrix</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <app-list-2 [list]="calcList"></app-list-2>
+    </div>
+</div>

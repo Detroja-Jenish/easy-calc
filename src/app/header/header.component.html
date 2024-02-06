@@ -1,0 +1,123 @@
+<div class="">
+    <div class="row mb-4">
+        logo
+    </div>
+    <div class="col" style="position: relative;">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-5">
+            <a class="px-3" href="#"><i class="fa-solid fa-house"></i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 px-2">
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#" (mouseenter)="isHidden = !isHidden"><i
+                                class="fa-solid fa-money-bill"></i> Financial
+                            Calculator</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-calculator"></i> Math Calculator</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-scale-balanced"></i> Metal Weight</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-anchor"></i>
+                            Structural Steel Section</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-table-cells"></i> Other Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ng-container *ngIf="isHidden" >
+            <div  class="container bg-dark custcolor" (mouseleave)="isHidden = !isHidden">
+                <div class="row">
+                    <div class="col">
+                        <b>Loan EMI Calculator</b><br><br>
+                        <p class="lh-lg"><a href="#" class="nav-link">Calculate EMI</a>
+                            <a href="#" class="nav-link">Advance EMI Calculator</a>
+                            <a href="#" class="nav-link">Calculate Loan Amount</a>
+                            <a href="#" class="nav-link">Calculate Loan Tenure</a>
+                            <a href="#" class="nav-link">Calculate Interest Rate</a>
+                            <a href="#" class="nav-link">Compare Loan</a>
+                            <a href="#" class="nav-link">Interest Rate Converter</a>
+                            <a href="#" class="nav-link">EMI FAQs</a>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col">
+                        <b>SIP Calculator</b><br><br>
+                        <p class="lh-lg">Calculator SIP Maturity Amount<br>
+                            Calculate SIP Investment Period<br>
+                            Calculate Monthly SIP Amount<br>
+                            Calculator Advance Maturity Amount<br>
+                            SWP Calculator<br>
+                            STP Calculator</p>
+                        <hr>
+                    </div>
+                    <div class="col">
+                        <b>Simple Interest Calculator</b><br><br>
+                        <p class="lh-lg">Calculate Simple Interest Amount<br>
+                            Calculate Principal Amount<br>
+                            Calculate Interest Rate<br>
+                            Calculate Number of Years</p>
+                        <hr>
+                    </div>
+                    <div class="col">
+                        <b>Compound Interest Calculator</b><br><br>
+                        <p class="lh-lg">Calculate Compound Interest Amount<br>
+                            Calculate Principal Amount<br>
+                            Calculate Interest Rate<br>
+                            Calculate Number of Years</p>
+
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <b>CAGR Calculator</b><br><br>
+                            <p class="lh-lg">
+                                Calculate CAGR<br>
+                                Calculate Starting Amount<br>
+                                Calculate Final Amount<br>
+                                Calculate Number of Years<br>
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <b>RD Calculator</b><br><br>
+                            <p class="lh-lg">
+                                Calculate Maturity Amount<br>
+                                Calculate Monthly Installment<br>
+                                Calculate Interest Rate<br>
+                                Calculate Number of Years<br>
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <b>Debt Reduction Calculator</b><br><br>
+                            <p class="lh-lg">Calculate Simple Interest Amount<br>
+                                Calculate Principal Amount<br>
+                                Calculate Interest Rate<br>
+                                Calculate Number of Years</p>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <b>Compound Interest Calculator</b><br><br>
+                            <p class="lh-lg">Calculate Compound Interest Amount<br>
+                                Calculate Principal Amount<br>
+                                Calculate Interest Rate<br>
+                                Calculate Number of Years</p>
+
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </ng-container>
+    </div>
+    <div class="col"></div>
+</div>
