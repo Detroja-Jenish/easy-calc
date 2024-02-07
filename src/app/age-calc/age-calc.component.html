@@ -1,0 +1,65 @@
+<body>
+
+    <div class="container">
+        <div class="row bg-light">
+            <h1><b>Age Calculator</b></h1>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                <div class="row my-3 bg-light">
+                    <div class="row my-3">
+                        <span><i class="fa fa-calendar"></i> <b>Calculate Age</b></span>
+                    </div>
+                    <div class="row my-3 lh-lg">
+                        <div class="col-4">
+                            Select Birth Date
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Select Birth Date"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fa fa-calendar"></i></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            Select Birth Time
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Select Birth Date"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fa fa-clock"></i></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <br>
+                            <button class="btn btn-success" (click)="hello()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-light my-3 py-3">
+                    <span><i class="fa fa-circle-info"></i><b> Age Calculator</b></span>
+                    <hr>
+                    <b class="lh-lg">
+                        <h2>What is Age Calculator ?</h2>
+                    </b><br>
+                    <span>Calculate the age of a person, place or anything else. This age calculator calculates age for
+                        a
+                        given date in years, months and days. It also provides the age in years for the birthday or
+                        anniversary that occurs this year.</span>
+                    <br><br><br>
+                    <h2>What is Birth Date ?</h2>
+                    <span>The date of a person, place or anything else birth, usually expressed as a specific day,
+                        month, and
+                        year.</span>
+                    <br><br><br>
+                    <h2>What is Birth Time ?</h2>
+                    <span>The birth time on which a person was born</span>
+                </div>
+            </div>
+            <div class="col m-3 bg-light">
+                <div class="py-3"><i class="fa fa-calculator"></i><b> Other Calculators</b></div>
+                <div *ngFor="let item of calc" class="lh-lg ">
+                    <a class="nav-item nav-link " href="#"><i class="{{item.icon}}"></i> {{item.title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
