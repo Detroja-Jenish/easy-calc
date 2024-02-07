@@ -18,6 +18,7 @@ import { TransposeComponent } from './transpose/transpose.component';
 import { MatrixRankComponent } from './matrix-rank/matrix-rank.component';
 import { GcdComponent } from './gcd/gcd.component';
 import { LcmComponent } from './lcm/lcm.component';
+import { AgeCalcComponent } from './age-calc/age-calc.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LcmComponent } from './lcm/lcm.component';
     TransposeComponent,
     MatrixRankComponent,
     GcdComponent,
-    LcmComponent
+    LcmComponent,
+    AgeCalcComponent
   ],
   imports: [
     BrowserModule,
