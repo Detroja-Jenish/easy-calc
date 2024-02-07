@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class List1Component {
   @Input() list = {
     heading: "",
+    icon:"",
     items : [
       {
         icon : "",

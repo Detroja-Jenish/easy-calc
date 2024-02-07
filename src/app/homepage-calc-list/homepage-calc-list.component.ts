@@ -9,7 +9,7 @@ export class HomepageCalcListComponent {
   
    calcs = [
     {
-      
+      icon : "fa fa-calculator",
       heading : "Financial",
       items : [
         {
@@ -112,6 +112,7 @@ export class HomepageCalcListComponent {
     },
     {
       heading: "Math Calculator",
+      icon : "fa fa-calculator",
       items : [
         {
           icon : "fa fa-th",
@@ -173,6 +174,8 @@ export class HomepageCalcListComponent {
 
     {
       heading: "Metal Weight Caclculator",
+      icon : "fa fa-calculator",
+
       items : [
         {
           icon : "fa fa-circle",
@@ -234,6 +237,8 @@ export class HomepageCalcListComponent {
 
     {
       heading : "Structural Steel Section",
+      icon : "fa fa-calculator",
+
       items : [
         {
           icon : "fa fa-bold",
@@ -268,6 +273,7 @@ export class HomepageCalcListComponent {
       ]
     },
     {
+      icon : "fa fa-calculator",
       heading : "Date & Time Calculator",
       items : [
         {
@@ -298,6 +304,7 @@ export class HomepageCalcListComponent {
       ]
     },
     {
+      icon : "fa fa-calculator",
       heading : "Color Converter",
       items : [
         {
@@ -318,6 +325,7 @@ export class HomepageCalcListComponent {
       ]
     },
     {
+      icon : "fa fa-calculator",
       heading : "Health And Fitness Calculator",
       items : [
         {
@@ -339,6 +347,7 @@ export class HomepageCalcListComponent {
     },
 
     {
+      icon : "fa fa-calculator",
       heading : "Other Calculator",
       items : [
         {
