@@ -1,0 +1,10 @@
+<div class="col-12 row px-4 py-3" style="background-color: #ffffff;">
+    <h2><i class="fa fa-info-circle mx-2" aria-hidden="true"></i>{{info.heading}}</h2>
+    <div class="col-12 pb-2" *ngFor="let info of info.infos">
+        <hr>
+        <h4 style="white-space: pre-wrap;">{{info.title}}</h4>
+        
+            <p *ngFor="let str of info.desc.split('\n')" style="font-size: 1.4rem;">{{str}}</p>
+    
+    </div>
+</div>
