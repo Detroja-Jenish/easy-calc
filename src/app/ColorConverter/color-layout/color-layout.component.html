@@ -1,0 +1,11 @@
+<div class="row px-3">
+    <div class="col-md-9 col-sm-12 col-xs-12 row my-5  row">
+        <router-outlet></router-outlet>
+        <app-color-table class="col-12"></app-color-table>
+
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 row my-5  row">
+        <app-list-3 [list]="colorConverters">
+        </app-list-3>
+    </div>
+</div>

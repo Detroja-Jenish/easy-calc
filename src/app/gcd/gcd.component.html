@@ -1,27 +1,33 @@
-<div class="row px-5 py-3">
-    <div class="col-12 bg-white p-5">
-        <div class="col-12 mb-5">
-            <h3><i class="fa fa-calculator mx-3"></i> Calculate GCD</h3>
-            <hr>
+<div class="row">
+    <div class="row col-md-9 col-sm-12 col-xs-12  px-5 py-5">
+        <div class="col-12 bg-white p-5">
+            <div class="col-12 mb-5">
+                <h3><i class="fa fa-calculator mx-3"></i> Calculate GCD</h3>
+                <hr>
+            </div>
+            <div class="col-12 row">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h5>*value 1</h5>
+                    <input type="text" class="form-control" placeholder="Enter Value 1"/>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h5>*value 1</h5>
+                    <input type="text" class="form-control" placeholder="Enter Value 2"/>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 flex">
+    
+                    <div class="w-100 mb-2">&nbsp;</div>
+    
+                    <button class="btn bg-info mx-2 px-3 py-2">Calculate</button>
+                    <button class="btn bg-danger mx-2 px-3 py-2">Clear</button>
+                </div>
+            </div>
         </div>
-        <div class="col-12 row">
-            <div class="col-md-3 col-sm-12 col-xs-12">
-                <h5>*value 1</h5>
-                <input type="text" class="form-control" placeholder="Enter Value 1"/>
-            </div>
-            <div class="col-md-3 col-sm-12 col-xs-12">
-                <h5>*value 1</h5>
-                <input type="text" class="form-control" placeholder="Enter Value 2"/>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 flex">
-
-                <div class="w-100 mb-2">&nbsp;</div>
-
-                <button class="btn bg-info mx-2 px-3 py-2">Calculate</button>
-                <button class="btn bg-danger mx-2 px-3 py-2">Clear</button>
-            </div>
-        </div>
+        <app-info [info]="information" class="col-12 bg-white  py-3 my-3"></app-info>
+    
     </div>
-    <app-info class="my-4 p-4" [info]="information"></app-info>
-    <app-list-1 class="p-4" [list]="calc" style="background-color: #ffffff;"></app-list-1>
+    <div class="col-md-3 col-sm-12 col-xs-12 px-3 py-2">
+        <app-list-1 [list]="calc" class=" col-12 px-5 py-4 my-3" ></app-list-1>
+        
+    </div>
 </div>

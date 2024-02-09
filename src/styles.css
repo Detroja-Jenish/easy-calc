@@ -1,4 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 .bg-white{
-    background-color: white !important;
+    background-color: white !important; 
+    border-radius: 1rem;
+}
+.bg-grey{
+    background-color: rgba(128, 128, 128, 0.411);
+}
+
+.colorstrip-bg-danger{
+    border-left : 3px solid rgb(238, 36, 36) !important
+}
+
+.colorstrip-bg-info{
+    border-left : 3px solid rgb(19, 181, 246) !important
+}
+
+.my-flex{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+}
+.my-flex-column{
+    display: flex !important;
+    flex-direction: column !important;
+    /* justify-content: space-around !important; */
+}
+.my-flex-row{
+    display: flex !important;
+    flex-direction: row !important;
+    /* justify-content: space-around !important; */
+}
+.my-flex>div{
+    flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+    .my-flex{
+        flex-direction: column!important;
+        display: flex!important;
+        align-items: center;
+        /* background-color: red!important; */
+    }
+
+    
+    
 }

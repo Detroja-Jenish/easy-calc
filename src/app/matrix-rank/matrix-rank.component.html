@@ -1,40 +1,47 @@
+<div class="row">
 
-<div class="row px-5 py-2">
-    <div class="col-12 p-4 my-3" style="background-color: #ffffff">
-        <i class="fa fa-calculator mx-2" style="font-size: 2em;"></i> <span style="font-size: 2em; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
-        <hr>
-        <p class="mb-5" style="font-size: 1.5em;">In linear algebra, the determinant is a useful value that can be computed from the elements of a square matrix.</p>
-
-        <p style="font-size: 1.5em;">
-            Matrix Size[ N x N ]
-        </p>
-        <div class="row my-2">
-            <div class="col-4">
-                <h3>No Of. Rows</h3>
+    <div class="row col-md-9 col-xs-12 col-sm-12 px-5 py-2">
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <i class="fa fa-calculator mx-2" style="font-size: 2em;"></i> <span style="font-size: 2em; color: rgb(62, 61, 61)">Calculate Matrix Rank</span>
+            <hr>
+            <p class="mb-5" style="font-size: 1.5em;">In linear algebra, the determinant is a useful value that can be computed from the elements of a square matrix.</p>
+    
+            <p style="font-size: 1.5em;">
+                Matrix Size[ N x N ]
+            </p>
+            <div class="row my-2">
+                <div class="col-4">
+                    <h3>No Of. Rows</h3>
+                </div>
+                <div class="col-4">
+                    <h3>No Of. Cols</h3>
+                </div>
             </div>
-            <div class="col-4">
-                <h3>No Of. Cols</h3>
+            <div class="row">
+                <div class="col-4">
+                    <!-- <h3>No Of. Rows</h3> -->
+                    <input class="form-control"/>
+                </div>
+                <div class="col-4">
+                    <!-- <h3>No Of. Cols</h3> -->
+                    <input class="form-control"/>
+                </div>
+                <div class="col-4">
+                    
+                     <button class="btn bg-info">Genrate Matrix</button>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <!-- <h3>No Of. Rows</h3> -->
-                <input class="form-control"/>
-            </div>
-            <div class="col-4">
-                <!-- <h3>No Of. Cols</h3> -->
-                <input class="form-control"/>
-            </div>
-            <div class="col-4">
-                
-                 <button class="btn bg-info">Genrate Matrix</button>
-            </div>
+        
+        
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <app-info class="col-12  p-4" [info]="information"></app-info>
         </div>
+        
+    
     </div>
-    
-    
-    <app-info [info]="information"></app-info>
-    <app-list-1 [list]="operationList" class="col-12 px-5 py-4 my-3" style="background-color: #ffffff" ></app-list-1>
-    <app-list-2 [list]="calc" class="col-12 px-5 py-4 my-3" style="background-color: #ffffff" ></app-list-2>
-
+    <div class="col-md-3 col-sm-12 col-xs-12 px-2 py-2">
+        <app-list-1 [list]="operationList" class=" col-12 px-5 py-4 my-3" ></app-list-1>
+        <app-list-2 [list]="calc" class=" col-12 px-5 py-4 my-3"></app-list-2>
+    </div>
 </div>

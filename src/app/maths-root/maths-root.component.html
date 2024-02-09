@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="row col-md-9 col-sm-12 col-xs-12  px-5 py-5">
+        <div class="col-12 bg-white p-5 mx-2 row">
+            <h3 class="col-12"><i class="fa fa-calculator" aria-hidden="true" class="mx-3"></i> Root Calculator</h3>
+            <hr class="col-12">
+            <div class="col-12 my-3 py-3 my-flex ">
+                <div class="flex-grow-1 my-4 py-2 ">
+                    <h4>*Root(x)</h4>
+                    <input type="text" class="form-controller w-100 py-3 px-2" placeholder="Enter Value 1"/>
+                </div>
+                <div class="d-flex justify-content-center h-100 align-items-center h3">
+                    √
+                </div>
+                <div class="flex-grow-1 my-4 py-2">
+                    <h4>*Value(y)</h4>
+                    <input type="text" class="form-controller w-100 py-3 px-2" placeholder="Enter Value 2"/>
+                </div>
+                
+                <div class="align-self-end  my-4 py-2">
+                    <button class="btn bg-info py-2 px-4">Calculate</button>
+                </div>
+                <div class="align-self-end  my-4 py-2">
+                    <button class="btn bg-danger py-2 px-4">clear</button>
+                </div>
+            </div>
+        </div>
+        <app-info [info]="information" class="col-12 bg-white  py-3 my-3"></app-info>
+    
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 px-3 py-2">
+        <app-list-1 [list]="calc" class=" col-12 px-5 py-4 my-3" ></app-list-1>
+        
+    </div>
+</div>

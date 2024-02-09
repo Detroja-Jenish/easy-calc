@@ -1,34 +1,40 @@
-<div class="row px-5 py-2">
-    <div class="col-12 p-4 my-3" style="background-color: #ffffff">
-        <i class="fa fa-calculator mx-2" style="font-size: 2em;"></i> <span style="font-size: 2em; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
-        <hr>
-        <p class="mb-5" style="font-size: 1.5em;">In linear algebra, the determinant is a useful value that can be computed from the elements of a square matrix.</p>
+<div class="row">
 
-        <p style="font-size: 1.5em;">
-            Matrix Size[ N x N ]
-        </p>
-        <div class="row">
-            <div class="col-4">
-                <select class="form-control" [(ngModel)]="n">
-                    <option selected disabled>Seleect Matrix Size</option>
-                    <option value="2">2x2</option>
-                    <option value="3">3x3</option>
-                    <option value="4">4x4</option>
-                    <option value="5">5x5</option>
-                    <option value="6">6x6</option>
-                    <option value="7">7x7</option>
-                    <option value="8">8x8</option>
-                </select>
-            </div>
-            <div class="col-4">
-                <button style="font-size: 1.2em;" class="btn bg-danger px-4 py-2">Genrate Matrix</button>
+    <div class="row col-md-9 col-sm-12 col-xs-12 px-5 py-2">
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <i class="fa fa-calculator mx-2" style="font-size: 2em;"></i> <span style="font-size: 2em; color: rgb(62, 61, 61)">Calculate Matrix Detrminant</span>
+            <hr>
+            <p class="mb-5" style="font-size: 1.5em;">In linear algebra, the determinant is a useful value that can be computed from the elements of a square matrix.</p>
+    
+            <p style="font-size: 1.5em;">
+                Matrix Size[ N x N ]
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <select class="form-control" [(ngModel)]="n">
+                        <option selected disabled>Seleect Matrix Size</option>
+                        <option value="2">2x2</option>
+                        <option value="3">3x3</option>
+                        <option value="4">4x4</option>
+                        <option value="5">5x5</option>
+                        <option value="6">6x6</option>
+                        <option value="7">7x7</option>
+                        <option value="8">8x8</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <button style="font-size: 1.2em;" class="btn bg-danger px-4 py-2">Genrate Matrix</button>
+                </div>
             </div>
         </div>
+        
+        <div class="col-12 p-4 my-3" style="background-color: #ffffff">
+            <app-info class="col-12  p-4" [info]="information"></app-info>
+        </div>
+    
+    </div> 
+    <div class="col-md-3 col-sm-12 col-xs-12 px-3 py-2">
+        <app-list-1 [list]="operationList" class=" col-12 px-5 py-4 my-3" ></app-list-1>
+        <app-list-2 [list]="calc" class=" col-12 px-5 py-4 my-3"></app-list-2>
     </div>
-    
-    
-    <app-info [info]="information"></app-info>
-    <app-list-1 [list]="operationList" class="col-12 px-5 py-4 my-3" style="background-color: #ffffff" ></app-list-1>
-    <app-list-2 [list]="calc" class="col-12 px-5 py-4 my-3" style="background-color: #ffffff" ></app-list-2>
-
 </div>
