@@ -1,0 +1,13 @@
+<div class="row p-5 my-3 bg-white ">
+    <h3 class="mx-2"><i class={{list.icon}}></i> {{list.heading}}</h3>
+    <hr> 
+    <div class="my-2 row" style="background-color: rgb(231, 233, 239); padding-left: 0px!important;" *ngFor="let item of list.items">
+         <div class="col-12" style="display: flex; margin: 0; padding: 0; ">
+             <!-- <div class={{item.colorStrip}} style="width: 5px; height: 100%;"></div> -->
+             <a [routerLink]="item.link" class="ms-2 py-2">
+                 <i class={{item.icon}}></i>
+                 {{item.name}}
+             </a>
+         </div>
+    </div>
+</div>

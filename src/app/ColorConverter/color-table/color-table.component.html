@@ -1,0 +1,20 @@
+<table class="table table-stripped table-bordered">
+    <thead>
+        <tr align="center" >
+            <td style="background-color: darkseagreen; font-weight: 900; color: #eeeeee; font-size : 1.3rem">Color</td>
+            <td style="background-color: darkseagreen; font-weight: 900; color: #eeeeee; font-size : 1.3rem">Color Name</td>
+            <td style="background-color: darkseagreen; font-weight: 900; color: #eeeeee; font-size : 1.3rem">( R, G, B )</td>
+            <td style="background-color: darkseagreen; font-weight: 900; color: #eeeeee; font-size : 1.3rem">Hex</td>
+            <td style="background-color: darkseagreen; font-weight: 900; color: #eeeeee; font-size : 1.3rem">( C, M, Y, K )</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let color of colors" align="center">
+            <td style="background-color: {{color.hex}}"></td>
+            <td>{{color.colorName}}</td>
+            <td>{{color.rgb}}</td>
+            <td>{{color.hex}}</td>
+            <td>{{color.cmyk}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+<div class="col-12 my-3 bg-white px-4 py-5">
+    <div class="col-12 mb-5">
+        <h3><i class="fa fa-calculator mx-3"></i> Error Find Calculator (Find Absolute error, Find Relative error, Find Percentage error)</h3>
+        <hr>
+    </div>
+    <div class="col-12 row">
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <h5>*Observed(Measured) Value(V<sub>Observed</sub>)</h5>
+            <input type="text" class="form-control" placeholder="Enter Value 1"/>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <h5>* True(Actual) Value(V<sub>true</sub>)</h5>
+            <input type="text" class="form-control" placeholder="Enter Value 2"/>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 flex">
+
+            <div class="w-100 mb-2">&nbsp;</div>
+
+            <button class="btn bg-info mx-2 px-3 py-2">Calculate</button>
+            <button class="btn bg-danger mx-2 px-3 py-2">Clear</button>
+        </div>
+    </div>
+</div>
+<div clas="col-12 my-3 ">
+
+    <app-info class="bg-danger py-5" [info]="information"></app-info>
+</div>

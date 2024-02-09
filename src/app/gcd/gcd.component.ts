@@ -50,7 +50,7 @@ export class GcdComponent {
     ]
   }
   information = {
-    heading : "Matrix Determinant",
+    heading : "GCD Calculator",
     infos : [
       {
         title : "What is GCD ?",
